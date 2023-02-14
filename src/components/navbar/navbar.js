@@ -6,28 +6,21 @@ import "./navbar.css";
 
 export default function Navbar() {
     return (
-        <div className="nav-container">
+        <div className="nav-header">
           <nav>
             <ul>
               <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) => (isActive ? "activated" : "link")}
-               end >
-                  ACCUEIL
-                </NavLink>
+                <NavLink to="/" className="nav-header_link-home">
+				    Accueil
+			    </NavLink>
               </li>
               <li>
-                <NavLink
-                  className={({ isActive }) => (isActive ? "activated" : "link")}
-                  to="/about"
-                  end
-                >
-                  A PROPOS
-                </NavLink>
+                <NavLink to="/about" className="nav-header_link-about">
+				    A Propos
+			    </NavLink>
               </li>
             </ul>
           </nav>
         </div>
       );
-    }
+}
