@@ -27,6 +27,7 @@ export default function Logement() {
   return (
     <>
       <Header />
+      <main>
       <Caroussel pictures={item.pictures}></Caroussel>
       <div className="content">
         <div className="bloc-left">
@@ -59,6 +60,7 @@ export default function Logement() {
         <Collapse texte={item.description} title="Description" />
         <Collapse texte={listeEquipements} title="Equipements" />
       </div>
+      </main>
       <Footer />
     </>
   );

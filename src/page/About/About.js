@@ -61,6 +61,7 @@ export default function About() {
 
   return (
     <div>
+      <main>
       <Header />
       <div className="cover">
         <img
@@ -72,6 +73,7 @@ export default function About() {
       {Items.map((item) => {
         return <Collapse title={item.title} texte={item.texte} key={item.id} />;
       })}
+      </main>
       <Footer />
     </div>
   );

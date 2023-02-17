@@ -1,12 +1,11 @@
 .nav-header {
     margin: 10px;
-    font-size: 0.8em;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
+    font-size: 1.5rem;
 }
 ul {
     list-style-type: none;
+    display: flex;
+    gap: 30px;
 }
 a {
     color: #ff0000;

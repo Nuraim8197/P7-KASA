@@ -1,21 +1,28 @@
+header{
+  display: flex;
+  justify-content: center;
+}
 .kasa-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-self: baseline;
-  margin: 20px;
-  width: 90%;
+  flex-grow: 1;
 }
 .logo {
     height: 50px;
     width: 180px;
   }
 
-@media screen and (max-width: 699px) {
-    .kasa-header {
-      margin: 20px 30px;
-    }
+@media screen and (max-width: 768px) {
+
     .logo {
-      height: 30px;
-      width: 70px;
+      width: 40%;
+    }
+    .nav-header{
+      font-size: 1.1rem;
+      width: 50%;
+    }
+    .nav-header ul{
+      padding-left: 1%;
     }
 }

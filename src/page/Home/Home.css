@@ -1,5 +1,5 @@
 .main{
-  padding: 1% 5%;
+  padding: 0 5%;
 }
 .cover {
     display: flex;
@@ -12,6 +12,7 @@
     height: 180px;
     filter: contrast(0.5);
     border-radius: 15px;
+    object-fit: cover;
   }
   
   .cover p {
@@ -27,7 +28,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #F6F6F6;
     margin: 0 30px;
     border-radius: 15px;
@@ -37,7 +38,7 @@
     display: flex;
     flex-direction: column-reverse;
     height: 240px;
-    width: 280px;
+    width: 400px;
     margin: 10px 20px;
     border-radius: 15px;
     background: rgb(255, 96, 96);
@@ -63,12 +64,19 @@
     flex-wrap: wrap;
   }
   
-  @media screen and (max-width: 699px) {
-    body {
-      margin: 0 20px;
+  @media screen and (max-width: 768px) {
+    .main{
+      padding: 0;
     }
-    .imgAccueil {
-      height: 100px;
+    .cover img{
+      height: 150px;
+    }
+    .cover {
+      justify-content: flex-start;
+    }
+    .cover p {
+      font-size: 25px;
+      width: 50%;
     }
     .listCard {
       background-color: white;
@@ -79,14 +87,12 @@
       width: 100%;
       margin: 10px 0px;
     }
+    .card img{
+      width: 335px;
+      height:225px;
+    }
     .card b {
       width: 40%;
     }
-    .cover {
-      justify-content: flex-start;
-    }
-    .cover p {
-      font-size: 25px;
-      width: 50%;
-    }
+
   }

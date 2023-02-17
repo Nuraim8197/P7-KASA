@@ -7,7 +7,12 @@
   
   .slider img {
     border-radius: 25px;
+    height: 415px;
   }
+  .slider-image{
+    object-fit: cover;
+  }
+
   
   .vectorNext {
     height: 30px;
