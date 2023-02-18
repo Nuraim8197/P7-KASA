@@ -66,6 +66,9 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.tags ul{
+  padding: 0;
+}
 
 .tags li {
   justify-content: flex-start;
@@ -135,10 +138,7 @@ svg {
     height: 32px;
   }
 }
-@media screen and (max-width: 699px) {
-  body {
-    margin: 0 20px;
-  }
+@media screen and (max-width: 768px) {
   .host p {
     width: 50px;
   }
@@ -161,9 +161,9 @@ svg {
   }
   .tags ul {
     justify-content: flex-start;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 300px;
+    gap: 10px;
+    padding: 0;
     flex-wrap: wrap;
   }
   .tags li {

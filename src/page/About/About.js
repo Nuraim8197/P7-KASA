@@ -61,8 +61,8 @@ export default function About() {
 
   return (
     <div>
-      <main>
       <Header />
+      <main>
       <div className="cover">
         <img
           className={mode}

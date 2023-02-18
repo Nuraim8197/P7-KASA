@@ -14,11 +14,8 @@
 }
 
 
-@media screen and (max-width: 699px){
-    
-    body{
-        margin: 0 10px;
-    }
+@media screen and (max-width: 768px){
+
     .container{
         margin: 20px 10px;
     }
